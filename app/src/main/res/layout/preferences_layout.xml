@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferences"
+        android:id="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#010101"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetarian"
+        android:id="@+id/PFCheckBox"
+        android:layout_below="@+id/textView3"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low Fat"
+        android:id="@+id/OFCheckBox"
+        android:layout_below="@+id/PFCheckBox"
+        android:layout_alignLeft="@+id/PFCheckBox"
+        android:layout_alignStart="@+id/PFCheckBox"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegan"
+        android:id="@+id/VeganCheckBox"
+        android:layout_below="@+id/OFCheckBox"
+        android:layout_alignLeft="@+id/OFCheckBox"
+        android:layout_alignStart="@+id/OFCheckBox"
+        android:checked="false" />
+
+</RelativeLayout>

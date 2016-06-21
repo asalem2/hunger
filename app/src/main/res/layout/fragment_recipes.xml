@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_pyramid_lightest">
+    <Button
+        android:id="@+id/findRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Recipes"
+        android:background="@drawable/light_blue_button1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="Near by grocery stores ->"
+        android:textSize="10dp"
+        android:layout_alignTop="@+id/MapButton"
+        android:layout_toStartOf="@+id/MapButton"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="@dimen/abc_action_button_min_height_material"
+        android:layout_height="48dp"
+        android:id="@+id/MapButton"
+        android:background="@drawable/google_map_image"
+        android:longClickable="false"
+        android:layout_gravity="right"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ListView
+        android:id="@+id/foundRecipesList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignEnd="@+id/MapButton"
+        android:layout_below="@+id/findRecipeButton" />
+
+</RelativeLayout>
